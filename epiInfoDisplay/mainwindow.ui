@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1920</width>
-    <height>1080</height>
+    <width>1280</width>
+    <height>720</height>
    </rect>
   </property>
   <property name="palette">
@@ -112,8 +112,8 @@
    <widget class="QLabel" name="logo_hub">
     <property name="geometry">
      <rect>
-      <x>1480</x>
-      <y>50</y>
+      <x>850</x>
+      <y>30</y>
       <width>371</width>
       <height>361</height>
      </rect>
@@ -131,7 +131,7 @@
    <widget class="QLabel" name="contribute">
     <property name="geometry">
      <rect>
-      <x>1430</x>
+      <x>800</x>
       <y>430</y>
       <width>471</width>
       <height>351</height>
@@ -178,7 +178,7 @@
       <x>30</x>
       <y>110</y>
       <width>911</width>
-      <height>111</height>
+      <height>181</height>
      </rect>
     </property>
     <property name="font">
@@ -196,7 +196,7 @@
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>240</y>
+      <y>290</y>
       <width>461</width>
       <height>81</height>
      </rect>
@@ -217,9 +217,9 @@
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>340</y>
+      <y>390</y>
       <width>931</width>
-      <height>111</height>
+      <height>181</height>
      </rect>
     </property>
     <property name="font">
