@@ -11,6 +11,7 @@ RtmInfo::RtmInfo()
     urls = new string[NB_STOPS];
     urls[0] = "http://map.rtm.fr/WebBusServeur/getStationDetails?nomPtReseau=03206&response=application/json&1514987769510";
     urls[1] = "http://map.rtm.fr/WebBusServeur/getStationDetails?nomPtReseau=CLA&response=application/json&1514988035255";
+    urls[2] = "http://map.rtm.fr/WebBusServeur/getStationDetails?nomPtReseau=03843&response=application/json&1515080617208";
 }
 
 

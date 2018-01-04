@@ -23,6 +23,13 @@ void    MainWindow::updateRtmInfo()
     QString     to_write;
 
     cout << "Updating RTM" << std::endl;
+    passages = rtmInfo.getNextPassage(2);
+    for (int i = 0; i < passages.size(); i += 3)
+    {
+        to_write += passages.at(i) + " vers " + passages.at(i + 1) + ": passage à " + passages.at(i + 2) + "\n";
+    }
+    ui->bus->setText(to_write);
+    to_write.clear();
     passages = rtmInfo.getNextPassage(1);
     for (int i = 0; i < passages.size(); i += 3)
     {

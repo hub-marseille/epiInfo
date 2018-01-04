@@ -11,7 +11,7 @@
 using namespace nlohmann;
 using namespace std;
 
-#define NB_STOPS 2
+#define NB_STOPS 3
 
 class RtmInfo
 {
@@ -24,6 +24,7 @@ public:
     /*
      * 0 = Euroméditérranée Gantès
      * 1 = Désirée Clary
+     * 2 = Joliette
      */
     QStringList const   &getNextPassage(size_t);
 };
