@@ -48,12 +48,14 @@ QStringList const   &RtmInfo::getNextPassage(size_t stopId)
                     for (auto it = data["getStationDetailsResponse"]["passage"].begin(); it != data["getStationDetailsResponse"]["passage"].end(); ++it)
                     {
                         out_list << QString::fromStdString((*it)["nomLigneCial"].get<string>())
+                                << QString::fromStdString(data["getStationDetailsResponse"]["comLieu"].get<string>())
                                 << QString::fromStdString((*it)["destination"].get<string>())
                                 << QString::fromStdString((*it)["heurePassageReel"].get<string>());
                     }
                 }
                 else
                     out_list << QString::fromStdString(data["getStationDetailsResponse"]["passage"]["nomLigneCial"].get<string>())
+                            << QString::fromStdString(data["getStationDetailsResponse"]["comLieu"].get<string>())
                             << QString::fromStdString(data["getStationDetailsResponse"]["passage"]["destination"].get<string>())
                             << QString::fromStdString(data["getStationDetailsResponse"]["passage"]["heurePassageReel"].get<string>());
             }

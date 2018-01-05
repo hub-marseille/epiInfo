@@ -24,23 +24,23 @@ void    MainWindow::updateRtmInfo()
 
     cout << "Updating RTM" << std::endl;
     passages = rtmInfo.getNextPassage(2);
-    for (int i = 0; i < passages.size(); i += 3)
+    for (int i = 0; i < passages.size(); i += 4)
     {
-        to_write += passages.at(i) + " vers " + passages.at(i + 1) + ": passage à " + passages.at(i + 2) + "\n";
+        to_write += passages.at(i) + " (" + passages.at(i + 1)+ ") vers " + passages.at(i + 2) + ": passage à " + passages.at(i + 3) + "\n";
     }
     ui->bus->setText(to_write);
     to_write.clear();
     passages = rtmInfo.getNextPassage(1);
-    for (int i = 0; i < passages.size(); i += 3)
+    for (int i = 0; i < passages.size(); i += 4)
     {
-        to_write += passages.at(i) + " vers " + passages.at(i + 1) + ": passage à " + passages.at(i + 2) + "\n";
+        to_write += passages.at(i) + " (" + passages.at(i + 1)+ ") vers " + passages.at(i + 2) + ": passage à " + passages.at(i + 3) + "\n";
     }
     ui->metro->setText(to_write);
     to_write.clear();
     passages = rtmInfo.getNextPassage(0);
-    for (int i = 0; i < passages.size(); i += 3)
+    for (int i = 0; i < passages.size(); i += 4)
     {
-        to_write += passages.at(i) + " vers " + passages.at(i + 1) + ": passage à " + passages.at(i + 2) + "\n";
+        to_write += passages.at(i) +  " (" + passages.at(i + 1) + ") vers " + passages.at(i + 2) + ": passage à " + passages.at(i + 3) + "\n";
     }
     ui->tram->setText(to_write);
 }
