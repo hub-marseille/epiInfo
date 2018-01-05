@@ -7,8 +7,11 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     updateRtmInfo();
+    updateTime();
     rtmTimer.start(30000);
     connect(&rtmTimer, SIGNAL(timeout()), this, SLOT(updateRtmInfo()));
+    timeTimer.start(1000);
+    connect(&timeTimer, SIGNAL(timeout()), this, SLOT(updateTime()));
     this->showFullScreen();
 }
 
@@ -43,4 +46,9 @@ void    MainWindow::updateRtmInfo()
         to_write += passages.at(i) +  " (" + passages.at(i + 1) + ") vers " + passages.at(i + 2) + ": passage à " + passages.at(i + 3) + "\n";
     }
     ui->tram->setText(to_write);
+}
+
+void    MainWindow::updateTime()
+{
+    ui->time->setText("Il est " + QDateTime::currentDateTime().toString("hh:mm:ss"));
 }
