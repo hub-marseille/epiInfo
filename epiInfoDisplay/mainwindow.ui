@@ -230,8 +230,8 @@
    <widget class="QLabel" name="contribute">
     <property name="geometry">
      <rect>
-      <x>980</x>
-      <y>640</y>
+      <x>900</x>
+      <y>570</y>
       <width>671</width>
       <height>171</height>
      </rect>
@@ -255,7 +255,7 @@
     <property name="geometry">
      <rect>
       <x>80</x>
-      <y>150</y>
+      <y>130</y>
       <width>711</width>
       <height>181</height>
      </rect>
@@ -279,7 +279,7 @@
     <property name="geometry">
      <rect>
       <x>80</x>
-      <y>480</y>
+      <y>450</y>
       <width>651</width>
       <height>181</height>
      </rect>
@@ -303,7 +303,7 @@
     <property name="geometry">
      <rect>
       <x>80</x>
-      <y>840</y>
+      <y>780</y>
       <width>521</width>
       <height>181</height>
      </rect>
@@ -356,8 +356,8 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>1920</width>
-      <height>1080</height>
+      <width>1824</width>
+      <height>984</height>
      </rect>
     </property>
     <property name="text">
@@ -374,7 +374,7 @@
     <property name="geometry">
      <rect>
       <x>990</x>
-      <y>840</y>
+      <y>780</y>
       <width>631</width>
       <height>181</height>
      </rect>
@@ -401,7 +401,7 @@
     <property name="geometry">
      <rect>
       <x>830</x>
-      <y>150</y>
+      <y>130</y>
       <width>111</width>
       <height>181</height>
      </rect>
@@ -425,7 +425,7 @@
     <property name="geometry">
      <rect>
       <x>830</x>
-      <y>480</y>
+      <y>450</y>
       <width>121</width>
       <height>181</height>
      </rect>
@@ -449,7 +449,7 @@
     <property name="geometry">
      <rect>
       <x>830</x>
-      <y>840</y>
+      <y>780</y>
       <width>111</width>
       <height>181</height>
      </rect>
@@ -473,7 +473,7 @@
     <property name="geometry">
      <rect>
       <x>230</x>
-      <y>190</y>
+      <y>170</y>
       <width>481</width>
       <height>101</height>
      </rect>
@@ -497,7 +497,7 @@
     <property name="geometry">
      <rect>
       <x>230</x>
-      <y>520</y>
+      <y>490</y>
       <width>481</width>
       <height>101</height>
      </rect>
@@ -521,7 +521,7 @@
     <property name="geometry">
      <rect>
       <x>230</x>
-      <y>880</y>
+      <y>820</y>
       <width>481</width>
       <height>101</height>
      </rect>
@@ -544,10 +544,10 @@
    <widget class="QLabel" name="gui_room">
     <property name="geometry">
      <rect>
-      <x>1187</x>
-      <y>92</y>
-      <width>158</width>
-      <height>250</height>
+      <x>1128</x>
+      <y>84</y>
+      <width>150</width>
+      <height>228</height>
      </rect>
     </property>
     <property name="text">
@@ -557,8 +557,8 @@
    <widget class="QLabel" name="guinness">
     <property name="geometry">
      <rect>
-      <x>1170</x>
-      <y>70</y>
+      <x>1110</x>
+      <y>60</y>
       <width>191</width>
       <height>121</height>
      </rect>
@@ -579,8 +579,8 @@
    <widget class="QLabel" name="scifi">
     <property name="geometry">
      <rect>
-      <x>1360</x>
-      <y>70</y>
+      <x>1290</x>
+      <y>60</y>
       <width>191</width>
       <height>121</height>
      </rect>
@@ -601,8 +601,8 @@
    <widget class="QLabel" name="cousteau">
     <property name="geometry">
      <rect>
-      <x>1580</x>
-      <y>70</y>
+      <x>1500</x>
+      <y>60</y>
       <width>191</width>
       <height>121</height>
      </rect>
@@ -623,8 +623,8 @@
    <widget class="QLabel" name="retro">
     <property name="geometry">
      <rect>
-      <x>1100</x>
-      <y>410</y>
+      <x>1030</x>
+      <y>370</y>
       <width>191</width>
       <height>121</height>
      </rect>
@@ -645,8 +645,8 @@
    <widget class="QLabel" name="hub">
     <property name="geometry">
      <rect>
-      <x>1570</x>
-      <y>409</y>
+      <x>1490</x>
+      <y>360</y>
       <width>192</width>
       <height>120</height>
      </rect>
@@ -667,10 +667,10 @@
    <widget class="QLabel" name="sci_room">
     <property name="geometry">
      <rect>
-      <x>1348</x>
-      <y>92</y>
-      <width>220</width>
-      <height>250</height>
+      <x>1280</x>
+      <y>84</y>
+      <width>210</width>
+      <height>228</height>
      </rect>
     </property>
     <property name="text">
@@ -680,10 +680,10 @@
    <widget class="QLabel" name="cou_room">
     <property name="geometry">
      <rect>
-      <x>1571</x>
-      <y>92</y>
-      <width>215</width>
-      <height>250</height>
+      <x>1493</x>
+      <y>84</y>
+      <width>204</width>
+      <height>228</height>
      </rect>
     </property>
     <property name="text">
@@ -693,10 +693,10 @@
    <widget class="QLabel" name="retro_room">
     <property name="geometry">
      <rect>
-      <x>965</x>
-      <y>428</y>
-      <width>465</width>
-      <height>246</height>
+      <x>917</x>
+      <y>390</y>
+      <width>441</width>
+      <height>224</height>
      </rect>
     </property>
     <property name="text">
@@ -706,10 +706,10 @@
    <widget class="QLabel" name="hub_room">
     <property name="geometry">
      <rect>
-      <x>1433</x>
-      <y>428</y>
-      <width>469</width>
-      <height>246</height>
+      <x>1362</x>
+      <y>390</y>
+      <width>445</width>
+      <height>224</height>
      </rect>
     </property>
     <property name="text">
@@ -719,8 +719,8 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>1640</x>
-      <y>640</y>
+      <x>1540</x>
+      <y>570</y>
       <width>271</width>
       <height>271</height>
      </rect>
@@ -735,11 +735,11 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="cousteau_2">
+   <widget class="QLabel" name="Copyright">
     <property name="geometry">
      <rect>
-      <x>1375</x>
-      <y>1000</y>
+      <x>1300</x>
+      <y>900</y>
       <width>521</width>
       <height>91</height>
      </rect>
@@ -845,7 +845,7 @@
    <zorder>hub_room</zorder>
    <zorder>hub</zorder>
    <zorder>label</zorder>
-   <zorder>cousteau_2</zorder>
+   <zorder>Copyright</zorder>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
