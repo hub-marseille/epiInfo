@@ -35,7 +35,7 @@ void    MainWindow::updateIntra()
         curl_easy_setopt(curl, CURLOPT_COOKIEFILE, "");
         curl_easy_setopt(curl, CURLOPT_COOKIEJAR, "");
         curl_easy_setopt(curl, CURLOPT_URL, intra.getAutologin().c_str());
-        assert(curl_easy_perform(curl) == CURLE_OK );
+        curl_easy_perform(curl);
         curl_easy_setopt(curl, CURLOPT_URL, intra.getUrl().c_str());
         curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_callback);
         curl_easy_setopt(curl, CURLOPT_WRITEDATA, &readBuffer);
@@ -68,6 +68,12 @@ void    MainWindow::updateIntra()
             } else {
                 ui->retro_room->setStyleSheet("QLabel { background-color : rgb(46, 204, 113);}");
             }
+        } else {
+            ui->sci_room->setStyleSheet("QLabel { background-color : rgb(46, 204, 113);}");
+            ui->gui_room->setStyleSheet("QLabel { background-color : rgb(46, 204, 113);}");
+            ui->cou_room->setStyleSheet("QLabel { background-color : rgb(46, 204, 113);}");
+            ui->retro_room->setStyleSheet("QLabel { background-color : rgb(46, 204, 113);}");
+            ui->hub_room->setStyleSheet("QLabel { background-color : rgb(46, 204, 113);}");
         }
         curl_easy_cleanup(curl);
     }
@@ -82,14 +88,14 @@ void    MainWindow::updateRtmInfo()
     cout << "Updating RTM" << std::endl;
     passages = rtmInfo.getNextPassage(2);
     if (passages.isEmpty()) {
-        to_write = "Aucune informations disponible\n";
+        to_write = "Aucune informations\n";
         ui->bus_error->setText(to_write);
         ui->bus->setText("");
         ui->bus_hour->setText("");
     } else {
         for (int i = 0; i < passages.size(); i += 4)
         {
-            to_write += passages.at(i) + "\t (" + passages.at(i + 1)+ ")\t ➔ \t" + passages.at(i + 2) + "\n";
+            to_write += passages.at(i) + "\t ➔ \t" + passages.at(i + 2) + "\n";
             hours += passages.at(i + 3) + "\n";
         }
         ui->bus->setText(to_write);
@@ -100,14 +106,14 @@ void    MainWindow::updateRtmInfo()
     to_write.clear();
     passages = rtmInfo.getNextPassage(1);
     if (passages.isEmpty()) {
-        to_write = "Aucune informations disponible\n";
+        to_write = "Aucune informations\n";
         ui->metro_error->setText(to_write);
         ui->metro->setText("");
         ui->metro_hour->setText("");
     } else {
         for (int i = 0; i < passages.size(); i += 4)
         {
-            to_write += passages.at(i) + "\t (" + passages.at(i + 1)+ ")\t ➔ \t" + passages.at(i + 2) + "\n";
+            to_write += passages.at(i) + "\t ➔ \t" + passages.at(i + 2) + "\n";
             hours += passages.at(i + 3) + "\n";
             ui->metro->setText(to_write);
             ui->metro_hour->setText(hours);
@@ -118,24 +124,20 @@ void    MainWindow::updateRtmInfo()
     to_write.clear();
     passages = rtmInfo.getNextPassage(0);
     if (passages.isEmpty()) {
-        to_write = "Aucune informations disponible\n";
+        to_write = "Aucune informations\n";
         ui->tram_error->setText(to_write);
         ui->tram->setText("");
         ui->tram_hour->setText("");
     } else {
         for (int i = 0; i < passages.size(); i += 4)
         {
-            to_write += passages.at(i) + "\t (" + passages.at(i + 1)+ ")\t ➔ \t" + passages.at(i + 2) + "\n";
+            to_write += passages.at(i) + "\t ➔ \t" + passages.at(i + 2) + "\n";
             hours += passages.at(i + 3) + "\n";
         }
         ui->tram->setText(to_write);
         ui->tram_hour->setText(hours);
         ui->tram_error->setText("");
     }
-    ui->gui_room->setStyleSheet("QLabel { background-color : rgb(46, 204, 113);}");
-    ui->cou_room->setStyleSheet("QLabel { background-color : rgb(46, 204, 113);}");
-    ui->retro_room->setStyleSheet("QLabel { background-color : rgb(46, 204, 113);}");
-    ui->hub_room->setStyleSheet("QLabel { background-color : rgb(46, 204, 113);}");
 }
 
 void    MainWindow::updateTime()

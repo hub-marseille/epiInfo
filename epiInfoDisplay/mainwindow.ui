@@ -254,16 +254,16 @@
    <widget class="QLabel" name="tram">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>130</y>
-      <width>711</width>
+      <x>320</x>
+      <y>780</y>
+      <width>361</width>
       <height>181</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Opificio Neue</family>
-      <pointsize>20</pointsize>
+      <pointsize>14</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -278,16 +278,16 @@
    <widget class="QLabel" name="metro">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>450</y>
-      <width>651</width>
+      <x>20</x>
+      <y>780</y>
+      <width>221</width>
       <height>181</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Opificio Neue</family>
-      <pointsize>20</pointsize>
+      <pointsize>14</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -302,16 +302,16 @@
    <widget class="QLabel" name="bus">
     <property name="geometry">
      <rect>
-      <x>80</x>
+      <x>630</x>
       <y>780</y>
-      <width>521</width>
+      <width>341</width>
       <height>181</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Opificio Neue</family>
-      <pointsize>20</pointsize>
+      <pointsize>14</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -374,7 +374,7 @@
     <property name="geometry">
      <rect>
       <x>990</x>
-      <y>780</y>
+      <y>770</y>
       <width>631</width>
       <height>181</height>
      </rect>
@@ -400,16 +400,16 @@
    <widget class="QLabel" name="tram_hour">
     <property name="geometry">
      <rect>
-      <x>830</x>
-      <y>130</y>
+      <x>560</x>
+      <y>780</y>
       <width>111</width>
-      <height>181</height>
+      <height>177</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Open 24 Display St</family>
-      <pointsize>25</pointsize>
+      <pointsize>16</pointsize>
       <weight>50</weight>
       <bold>false</bold>
      </font>
@@ -424,16 +424,16 @@
    <widget class="QLabel" name="metro_hour">
     <property name="geometry">
      <rect>
-      <x>830</x>
-      <y>450</y>
+      <x>260</x>
+      <y>780</y>
       <width>121</width>
-      <height>181</height>
+      <height>177</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Open 24 Display St</family>
-      <pointsize>25</pointsize>
+      <pointsize>16</pointsize>
       <weight>50</weight>
       <bold>false</bold>
      </font>
@@ -448,16 +448,16 @@
    <widget class="QLabel" name="bus_hour">
     <property name="geometry">
      <rect>
-      <x>830</x>
+      <x>860</x>
       <y>780</y>
       <width>111</width>
-      <height>181</height>
+      <height>177</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Open 24 Display St</family>
-      <pointsize>25</pointsize>
+      <pointsize>16</pointsize>
       <weight>50</weight>
       <bold>false</bold>
      </font>
@@ -472,8 +472,8 @@
    <widget class="QLabel" name="tram_error">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>170</y>
+      <x>210</x>
+      <y>820</y>
       <width>481</width>
       <height>101</height>
      </rect>
@@ -481,7 +481,7 @@
     <property name="font">
      <font>
       <family>Opificio Neue</family>
-      <pointsize>20</pointsize>
+      <pointsize>16</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -496,16 +496,16 @@
    <widget class="QLabel" name="metro_error">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>490</y>
-      <width>481</width>
+      <x>-20</x>
+      <y>820</y>
+      <width>361</width>
       <height>101</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Opificio Neue</family>
-      <pointsize>20</pointsize>
+      <pointsize>16</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -520,7 +520,7 @@
    <widget class="QLabel" name="bus_error">
     <property name="geometry">
      <rect>
-      <x>230</x>
+      <x>530</x>
       <y>820</y>
       <width>481</width>
       <height>101</height>
@@ -529,13 +529,13 @@
     <property name="font">
      <font>
       <family>Opificio Neue</family>
-      <pointsize>20</pointsize>
+      <pointsize>16</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
     </property>
     <property name="text">
-     <string>Metro Error</string>
+     <string>Bus Error</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -739,7 +739,7 @@
     <property name="geometry">
      <rect>
       <x>1300</x>
-      <y>900</y>
+      <y>910</y>
       <width>521</width>
       <height>91</height>
      </rect>
@@ -821,19 +821,42 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
+   <widget class="QLabel" name="next_2">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>200</y>
+      <width>801</width>
+      <height>311</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Opificio Neue</family>
+      <pointsize>25</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Planning et affichage des activités à venir&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::RichText</enum>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
    <zorder>background</zorder>
    <zorder>contribute</zorder>
    <zorder>tram</zorder>
-   <zorder>metro</zorder>
    <zorder>bus</zorder>
    <zorder>time</zorder>
    <zorder>next</zorder>
    <zorder>tram_hour</zorder>
-   <zorder>metro_hour</zorder>
    <zorder>bus_hour</zorder>
    <zorder>tram_error</zorder>
-   <zorder>metro_error</zorder>
-   <zorder>bus_error</zorder>
    <zorder>gui_room</zorder>
    <zorder>guinness</zorder>
    <zorder>sci_room</zorder>
@@ -846,6 +869,11 @@
    <zorder>hub</zorder>
    <zorder>label</zorder>
    <zorder>Copyright</zorder>
+   <zorder>metro</zorder>
+   <zorder>bus_error</zorder>
+   <zorder>metro_error</zorder>
+   <zorder>metro_hour</zorder>
+   <zorder>next_2</zorder>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
