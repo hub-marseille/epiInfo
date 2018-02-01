@@ -28,14 +28,19 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    rtminfo.cpp
+    rtminfo.cpp \
+    intra.cpp
 
 HEADERS += \
         mainwindow.h \
     rtminfo.h \
-    json.hpp
+    json.hpp \
+    intra.h
 
 FORMS += \
         mainwindow.ui
 
 RESOURCES = ressources.qrc
+
+DISTFILES += \
+    ressources/background.png

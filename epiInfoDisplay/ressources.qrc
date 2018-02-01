@@ -1,5 +1,8 @@
-<!DOCTYPE RCC><RCC version="1.0">
-<qresource>
-    <file>ressources/logo_hub.png</file>
-</qresource>
+<RCC>
+    <qresource prefix="/">
+        <file>ressources/background.png</file>
+        <file>ressources/logo_hub.png</file>
+        <file>ressources/Open 24 Display St.ttf</file>
+        <file>ressources/Opificio_neue-regular.ttf</file>
+    </qresource>
 </RCC>

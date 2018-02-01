@@ -163,13 +163,566 @@
     <normaloff>:/ressources/logo_hub.png</normaloff>:/ressources/logo_hub.png</iconset>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QLabel" name="logo_hub">
+   <property name="palette">
+    <palette>
+     <active>
+      <colorrole role="WindowText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>22</red>
+         <green>54</green>
+         <blue>76</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Text">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>22</red>
+         <green>54</green>
+         <blue>76</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </active>
+     <inactive>
+      <colorrole role="WindowText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>22</red>
+         <green>54</green>
+         <blue>76</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Text">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>22</red>
+         <green>54</green>
+         <blue>76</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </inactive>
+     <disabled>
+      <colorrole role="WindowText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>190</red>
+         <green>190</green>
+         <blue>190</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Text">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>190</red>
+         <green>190</green>
+         <blue>190</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </disabled>
+    </palette>
+   </property>
+   <widget class="QLabel" name="contribute">
     <property name="geometry">
      <rect>
-      <x>1440</x>
-      <y>30</y>
-      <width>371</width>
-      <height>361</height>
+      <x>980</x>
+      <y>640</y>
+      <width>671</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Opificio Neue</family>
+      <pointsize>25</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Contribuez au projet sur&lt;br/&gt;github.com/hub-marseille/epiInfo&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::RichText</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="tram">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>150</y>
+      <width>711</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Opificio Neue</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Horaires trams</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="metro">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>480</y>
+      <width>651</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Opificio Neue</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Horaires métros</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="bus">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>840</y>
+      <width>521</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Opificio Neue</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>Horaires bus</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="time">
+    <property name="geometry">
+     <rect>
+      <x>1270</x>
+      <y>25</y>
+      <width>341</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Opificio Neue</family>
+      <pointsize>45</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>xx:xx:xx</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="background">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1920</width>
+      <height>1080</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="ressources.qrc">:/ressources/background.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="next">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>840</y>
+      <width>631</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Opificio Neue</family>
+      <pointsize>25</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Aucune information pour le moment.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::RichText</enum>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="tram_hour">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>150</y>
+      <width>111</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Open 24 Display St</family>
+      <pointsize>25</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Heure tram</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="metro_hour">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>480</y>
+      <width>121</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Open 24 Display St</family>
+      <pointsize>25</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Heure Metro</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="bus_hour">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>840</y>
+      <width>111</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Open 24 Display St</family>
+      <pointsize>25</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Heure Bus</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="tram_error">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>190</y>
+      <width>481</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Opificio Neue</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Tram Error</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="metro_error">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>520</y>
+      <width>481</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Opificio Neue</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Metro Error</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="bus_error">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>880</y>
+      <width>481</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Opificio Neue</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Metro Error</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="gui_room">
+    <property name="geometry">
+     <rect>
+      <x>1187</x>
+      <y>92</y>
+      <width>158</width>
+      <height>250</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="guinness">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>70</y>
+      <width>191</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Opificio Neue</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Guinness</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="scifi">
+    <property name="geometry">
+     <rect>
+      <x>1360</x>
+      <y>70</y>
+      <width>191</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Opificio Neue</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Scifi</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="cousteau">
+    <property name="geometry">
+     <rect>
+      <x>1580</x>
+      <y>70</y>
+      <width>191</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Opificio Neue</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Cousteau</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="retro">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>410</y>
+      <width>191</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Opificio Neue</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Retro</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="hub">
+    <property name="geometry">
+     <rect>
+      <x>1570</x>
+      <y>409</y>
+      <width>192</width>
+      <height>120</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Opificio Neue</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>HUB</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="sci_room">
+    <property name="geometry">
+     <rect>
+      <x>1348</x>
+      <y>92</y>
+      <width>220</width>
+      <height>250</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="cou_room">
+    <property name="geometry">
+     <rect>
+      <x>1571</x>
+      <y>92</y>
+      <width>215</width>
+      <height>250</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="retro_room">
+    <property name="geometry">
+     <rect>
+      <x>965</x>
+      <y>428</y>
+      <width>465</width>
+      <height>246</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="hub_room">
+    <property name="geometry">
+     <rect>
+      <x>1433</x>
+      <y>428</y>
+      <width>469</width>
+      <height>246</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>1640</x>
+      <y>640</y>
+      <width>271</width>
+      <height>271</height>
      </rect>
     </property>
     <property name="text">
@@ -182,173 +735,30 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="contribute">
-    <property name="geometry">
-     <rect>
-      <x>1390</x>
-      <y>430</y>
-      <width>471</width>
-      <height>351</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>16</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Contribuez au projet sur&lt;br/&gt;github.com/hub-marseille/epiInfo&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;À venir:&lt;/p&gt;&lt;p&gt;- Horaires de bus &lt;/p&gt;&lt;p&gt;(selon les lignes demandées)&lt;/p&gt;&lt;p&gt;- Affichage de l'occupation des salles&lt;/p&gt;&lt;p&gt;- Messages d'information&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-    <property name="textFormat">
-     <enum>Qt::RichText</enum>
-    </property>
-   </widget>
-   <widget class="QLabel" name="tram_const">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>20</y>
-      <width>461</width>
-      <height>81</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>25</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-      <underline>true</underline>
-     </font>
-    </property>
-    <property name="text">
-     <string>Prochains trams:</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="tram">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>110</y>
-      <width>911</width>
-      <height>181</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>15</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>Horaires trams</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="metro_const">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>290</y>
-      <width>461</width>
-      <height>81</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>25</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-      <underline>true</underline>
-     </font>
-    </property>
-    <property name="text">
-     <string>Prochains métros:</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="metro">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>390</y>
-      <width>931</width>
-      <height>181</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>15</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>Horaires métros</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="bus_const">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>570</y>
-      <width>461</width>
-      <height>81</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>25</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-      <underline>true</underline>
-     </font>
-    </property>
-    <property name="text">
-     <string>Prochains bus:</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="bus">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>660</y>
-      <width>931</width>
-      <height>181</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>15</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>Horaires bus</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="time">
-    <property name="geometry">
-     <rect>
-      <x>790</x>
-      <y>30</y>
-      <width>341</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>30</pointsize>
-      <weight>75</weight>
-      <italic>true</italic>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>Il est xx:xx:xx</string>
-    </property>
-   </widget>
+   <zorder>background</zorder>
+   <zorder>contribute</zorder>
+   <zorder>tram</zorder>
+   <zorder>metro</zorder>
+   <zorder>bus</zorder>
+   <zorder>time</zorder>
+   <zorder>next</zorder>
+   <zorder>tram_hour</zorder>
+   <zorder>metro_hour</zorder>
+   <zorder>bus_hour</zorder>
+   <zorder>tram_error</zorder>
+   <zorder>metro_error</zorder>
+   <zorder>bus_error</zorder>
+   <zorder>gui_room</zorder>
+   <zorder>guinness</zorder>
+   <zorder>sci_room</zorder>
+   <zorder>scifi</zorder>
+   <zorder>cou_room</zorder>
+   <zorder>cousteau</zorder>
+   <zorder>retro_room</zorder>
+   <zorder>retro</zorder>
+   <zorder>hub_room</zorder>
+   <zorder>hub</zorder>
+   <zorder>label</zorder>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
