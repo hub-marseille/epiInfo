@@ -738,9 +738,9 @@
    <widget class="QLabel" name="cousteau_2">
     <property name="geometry">
      <rect>
-      <x>1425</x>
+      <x>1375</x>
       <y>1000</y>
-      <width>471</width>
+      <width>521</width>
       <height>91</height>
      </rect>
     </property>
