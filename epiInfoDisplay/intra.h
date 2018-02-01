@@ -8,7 +8,7 @@
 #include <QStringList>
 #include <fstream>
 #include <QApplication>
-#include <QDir>
+#include <QFile>
 #include "json.hpp"
 
 #define Scifi       "FR/MAR/main/BAT1-SciFi"

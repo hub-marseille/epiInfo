@@ -7,17 +7,17 @@ Intra::Intra()
     struct tm   tstruct = *localtime(&now);
     char        buf[80];
     string      current;
-    fstream     file;
+    QFile       file(":/login.txt");
 
     strftime(buf, sizeof(buf), "%Y-%m-%d", &tstruct);
     current = strdup(buf);
     url = "https://intra.epitech.eu/planning/load?format=json&start=" + current + "&end=" + current;
-    file.open("../login.txt");
-    if (file.is_open()) {
-        getline(file, autologin);
-    } else
-        autologin = "";
-
+    if (file.open(QFile::ReadOnly)) {
+        QString content = file.readLine();
+        content.remove(QChar('\n'), Qt::CaseInsensitive);
+        autologin = content.toStdString();
+        cout << "\"" << autologin << "\"" << endl;
+    }
 }
 
 Intra::~Intra()

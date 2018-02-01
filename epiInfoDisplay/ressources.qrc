@@ -4,5 +4,6 @@
         <file>ressources/logo_hub.png</file>
         <file>ressources/Open 24 Display St.ttf</file>
         <file>ressources/Opificio_neue-regular.ttf</file>
-    </qresource>
+	<file alias="login.txt">ressources/login.txt</file>
+</qresource>
 </RCC>
