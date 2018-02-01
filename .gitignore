@@ -35,3 +35,6 @@ build*
 *~
 #*#
 *.user
+
+#Autologin File
+login.txt

@@ -11,7 +11,6 @@
 #include <QDir>
 #include "json.hpp"
 
-#define AUTOLOGIN   "https://intra.epitech.eu/auth-1265babbfe63c26a72f9323ba994946534411355"
 #define Scifi       "FR/MAR/main/BAT1-SciFi"
 #define Cousteau    "FR/MAR/main/BAT1-Cousteau"
 #define Guiness     "FR/MAR/main/BAT1-Guiness"
