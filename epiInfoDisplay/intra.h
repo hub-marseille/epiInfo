@@ -15,7 +15,7 @@
 #define Cousteau    "FR/MAR/main/BAT1-Cousteau"
 #define Guiness     "FR/MAR/main/BAT1-Guiness"
 #define CoWorking   "FR/MAR/main/BAT1-CoWorking"
-#define Hub         "FR/MAR/main/BAT2-Hub"
+#define Hub         "FR/MAR/main/BAT2-HUB"
 #define Retro       "FR/MAR/main/BAT2-Retro"
 
 using namespace std;
