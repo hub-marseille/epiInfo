@@ -304,7 +304,7 @@
      <rect>
       <x>620</x>
       <y>780</y>
-      <width>341</width>
+      <width>211</width>
       <height>181</height>
      </rect>
     </property>
@@ -851,11 +851,9 @@
    <zorder>background</zorder>
    <zorder>contribute</zorder>
    <zorder>tram</zorder>
-   <zorder>bus</zorder>
    <zorder>time</zorder>
    <zorder>next</zorder>
    <zorder>tram_hour</zorder>
-   <zorder>bus_hour</zorder>
    <zorder>tram_error</zorder>
    <zorder>gui_room</zorder>
    <zorder>guinness</zorder>
@@ -874,6 +872,8 @@
    <zorder>metro_error</zorder>
    <zorder>metro_hour</zorder>
    <zorder>next_2</zorder>
+   <zorder>bus_hour</zorder>
+   <zorder>bus</zorder>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
