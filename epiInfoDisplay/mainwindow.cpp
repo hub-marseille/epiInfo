@@ -40,7 +40,7 @@ void    MainWindow::updateIntra()
         curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_callback);
         curl_easy_setopt(curl, CURLOPT_WRITEDATA, &readBuffer);
         curl_easy_perform(curl);
-        if (readBuffer.size() > 0)
+        if (readBuffer.size() > 0&& readBuffer.find("[") == 0)
         {
             data = nlohmann::json::parse(readBuffer.c_str());
             if (intra.getScifi(data) == true) {
