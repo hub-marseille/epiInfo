@@ -26,7 +26,7 @@ public:
      * 1 = Désirée Clary
      * 2 = Joliette
      */
-    QStringList const   &getNextPassage(size_t);
+    QStringList const&getNextPassage(size_t);
 };
 
 #endif // RTMINFO_H

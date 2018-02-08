@@ -370,19 +370,19 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="next">
+   <widget class="QLabel" name="information">
     <property name="geometry">
      <rect>
-      <x>990</x>
-      <y>770</y>
-      <width>631</width>
+      <x>930</x>
+      <y>760</y>
+      <width>861</width>
       <height>181</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Opificio Neue</family>
-      <pointsize>25</pointsize>
+      <pointsize>20</pointsize>
       <weight>50</weight>
       <bold>false</bold>
      </font>
@@ -391,10 +391,16 @@
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Aucune information pour le moment.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="textFormat">
-     <enum>Qt::RichText</enum>
+     <enum>Qt::AutoText</enum>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QLabel" name="tram_hour">
@@ -719,8 +725,8 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>1540</x>
-      <y>570</y>
+      <x>1545</x>
+      <y>530</y>
       <width>271</width>
       <height>271</height>
      </rect>
@@ -852,7 +858,7 @@
    <zorder>contribute</zorder>
    <zorder>tram</zorder>
    <zorder>time</zorder>
-   <zorder>next</zorder>
+   <zorder>information</zorder>
    <zorder>tram_hour</zorder>
    <zorder>tram_error</zorder>
    <zorder>gui_room</zorder>

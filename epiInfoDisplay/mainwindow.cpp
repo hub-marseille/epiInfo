@@ -7,9 +7,12 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     this->centralWidget()->setStyleSheet("background-image:url(\"/background.png\"); background-position: center;");
+    updateInfos();
     updateRtmInfo();
     updateTime();
     updateIntra();
+    infosTimer.start(60000);
+    connect(&infosTimer, SIGNAL(timeout()), this, SLOT(updateInfos()));
     rtmTimer.start(30000);
     connect(&rtmTimer, SIGNAL(timeout()), this, SLOT(updateRtmInfo()));
     intraTimer.start(60000);
@@ -22,6 +25,17 @@ MainWindow::MainWindow(QWidget *parent) :
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+
+void    MainWindow::updateInfos()
+{
+    string  content = infos.getContent().c_str();
+
+    cout << "UpdateInfos" << endl;
+    if (content.empty())
+        ui->information->setText("Aucune information disponible");
+    else
+        ui->information->setText(infos.getContent().c_str());
 }
 
 void    MainWindow::updateIntra()

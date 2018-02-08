@@ -6,6 +6,7 @@
 #include <QTimer>
 #include "rtminfo.h"
 #include "intra.h"
+#include "infos.h"
 
 namespace Ui {
 class MainWindow;
@@ -23,13 +24,16 @@ private:
     Ui::MainWindow  *ui;
     RtmInfo         rtmInfo;
     Intra           intra;
+    Infos           infos;
     QTimer          intraTimer;
     QTimer          rtmTimer;
     QTimer          timeTimer;
+    QTimer          infosTimer;
 
 private slots:
     void    updateRtmInfo();
     void    updateTime();
+    void    updateInfos();
     void    updateIntra();
 };
 

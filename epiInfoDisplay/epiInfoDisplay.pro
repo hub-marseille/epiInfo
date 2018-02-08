@@ -29,13 +29,15 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
     rtminfo.cpp \
-    intra.cpp
+    intra.cpp \
+    infos.cpp
 
 HEADERS += \
         mainwindow.h \
     rtminfo.h \
     json.hpp \
-    intra.h
+    intra.h \
+    infos.h
 
 FORMS += \
         mainwindow.ui
