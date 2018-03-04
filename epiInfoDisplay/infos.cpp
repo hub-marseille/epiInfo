@@ -25,13 +25,12 @@ const string   &Infos::getContent()
         curl_easy_setopt(curl, CURLOPT_WRITEDATA, &readBuffer);
         curl_easy_perform(curl);
         curl_easy_cleanup(curl);
-        cout << readBuffer << endl;
-        if (readBuffer.size() > 0 && readBuffer.find("{") == 0)
+        if (readBuffer.size() > 0)
         {
             data = nlohmann::json::parse(readBuffer.c_str());
-            if (!data["content"].is_null())
+            if (!data[0]["content"].is_null())
             {
-                content = data["content"].get<string>();
+                content = data[0]["content"].get<string>();
             }
         }
     }
