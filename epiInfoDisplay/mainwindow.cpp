@@ -19,6 +19,7 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(&rtmTimer, SIGNAL(timeout()), this, SLOT(updateIntra()));
     timeTimer.start(1000);
     connect(&timeTimer, SIGNAL(timeout()), this, SLOT(updateTime()));
+
     this->showFullScreen();
 }
 

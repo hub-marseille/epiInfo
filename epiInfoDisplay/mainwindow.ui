@@ -827,33 +827,6 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="next_2">
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>200</y>
-      <width>801</width>
-      <height>311</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Opificio Neue</family>
-      <pointsize>25</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Planning et affichage des activités à venir&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-    <property name="textFormat">
-     <enum>Qt::RichText</enum>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
    <zorder>background</zorder>
    <zorder>contribute</zorder>
    <zorder>tram</zorder>
@@ -877,7 +850,6 @@
    <zorder>bus_error</zorder>
    <zorder>metro_error</zorder>
    <zorder>metro_hour</zorder>
-   <zorder>next_2</zorder>
    <zorder>bus_hour</zorder>
    <zorder>bus</zorder>
   </widget>
